@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30.May.2020, 20:21:05
+    Author     : RABİA
+*/ 
+ /*  1.tablo   */
+#tble_veriler{
+    
+    -fx-background-color: #c0b8c3 ;
+  
+}
+
+#btn_siparisKaydet{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    
+    
+    
+}
+
+#sldr_brm{
+    
+    -fx-background-color: gray ;  
+    
+}
+
+#anc_stok{
+    
+    -fx-background-color: #FAEBD7 ;
+}
+#btn_urunekle{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    
+}
+#btn_urunguncelle{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    
+}
+#btn_urungetir{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+
+}
+
+#anc_siparis {
+    -fx-background-color: #FAEBD7 ;
+   
+}
+
+#anc_musteri{
+    -fx-background-color: #FAEBD7 ;
+    
+}
+#btn_pkaydet{
+    
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+    
+    
+}
+btn_mkaydet{
+    
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+
+    
+    
+}
+
+#anc_personel {
+    
+    -fx-background-color: #FAEBD7 ;
+    
+    
+}

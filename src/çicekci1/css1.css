@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30.May.2020, 17:23:25
+    Author     : RABİA
+*/
+
+#btn_tgiris{
+   
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+   
+ 
+}
+#btn_uyeol{
+    -fx-text-fill: black;
+    -fx-padding: 6 6 6 6 ;
+    -fx-background-color: #d2d1d1 ;
+    -fx-border-color: black ;
+    -fx-border-style: solid ;
+    -fx-border-width: 2px;
+
+    
+
+
+}
+
+#anc_pane{
+    
+    -fx-background-color: #FAEBD7 ;
+    
+    
+}
+

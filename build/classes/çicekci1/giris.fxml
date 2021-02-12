@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anc_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="çicekci1.GirisController">
+   <children>
+      <Label fx:id="lbl_ykullanici" layoutX="72.0" layoutY="52.0" text="Mail  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_ysifre" layoutX="72.0" layoutY="110.0" text="Şifre :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_ykullanici" layoutX="191.0" layoutY="53.0" />
+      <Button id="btn_tgiris" fx:id="btn_tgiris" layoutX="340.0" layoutY="181.0" mnemonicParsing="false" onAction="#Tiklandi_giris" prefHeight="50.0" prefWidth="100.0" text="Giriş" AnchorPane.topAnchor="181.0" />
+      <PasswordField fx:id="pass_sifre" layoutX="191.0" layoutY="111.0" />
+      <Button fx:id="btn_uyeol" layoutX="191.0" layoutY="181.0" mnemonicParsing="false" onAction="#Tiklandi_uyeol" prefHeight="50.0" prefWidth="100.0" text="Üye ol" />
+      <CheckBox fx:id="check_personel" layoutX="28.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Personel" />
+   </children>
+</AnchorPane>

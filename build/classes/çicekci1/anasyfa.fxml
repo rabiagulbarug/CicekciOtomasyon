@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="pnl_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="591.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="çicekci1.CicekController" >
+  <tabs>
+      <Tab fx:id="tab_personel" text="Personel">
+         <content>
+            <AnchorPane fx:id="anc_personel" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txt_pisim" layoutX="147.0" layoutY="31.0" />
+                  <TextField fx:id="txt_psifre" layoutX="147.0" layoutY="66.0" />
+                  <TextField fx:id="txt_ptelefon" layoutX="147.0" layoutY="102.0" />
+                  <TextField fx:id="txt_padres" layoutX="147.0" layoutY="139.0" />
+                  <Label fx:id="lbl_isim1" layoutX="33.0" layoutY="33.0" text="KULLANICI ADI :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_soyisim1" layoutX="33.0" layoutY="68.0" text="SİFRE :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_tlfn1" layoutX="31.0" layoutY="104.0" text="TELEFON NO :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_adrs1" layoutX="33.0" layoutY="141.0" text="ADRES :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_pkaydet" layoutX="357.0" layoutY="277.0" mnemonicParsing="false" onAction="#Tiklandi_personelEnter" prefHeight="76.0" prefWidth="144.0" text="KAYDET" />
+                  <Label fx:id="lbl_isim11" layoutX="31.0" layoutY="247.0" text="İZİN SAYISI :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_isim12" layoutX="32.0" layoutY="211.0" text="MAAS:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_isim13" layoutX="33.0" layoutY="177.0" text="MAİL :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_pmail" layoutX="147.0" layoutY="175.0" />
+                  <TextField fx:id="txt_pmaas" layoutX="147.0" layoutY="209.0" />
+                  <TextArea fx:id="txt_pizinsayisi" layoutX="149.0" layoutY="245.0" prefHeight="24.0" prefWidth="145.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_pyonetimi" text="Personel yönetimi">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table_personel" layoutX="-2.0" layoutY="-3.0" prefHeight="403.0" prefWidth="522.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="kln_personelID" prefWidth="75.0" text="Personel ID" />
+                        <TableColumn fx:id="kln_kullaniciad" prefWidth="75.0" text="Kullanıcı Adı" />
+                        <TableColumn fx:id="kln_telefonno" prefWidth="75.0" text="Telefon No" />
+                        <TableColumn fx:id="kln_adres" prefWidth="75.0" text="Adres" />
+                      <TableColumn fx:id="kln_mail" prefWidth="75.0" text="Mail" />
+                      <TableColumn fx:id="kln_maas" prefWidth="75.0" text="Maas" />
+                        <TableColumn fx:id="kln_izinsayisi" prefWidth="75.0" text="İzin Sayısı" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab fx:id="tab_stok" text="Stok">
+      <content>
+        <AnchorPane fx:id="anc_stok" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lbl_urunadı" layoutX="50.0" layoutY="49.0" prefHeight="32.0" prefWidth="83.0" text="ÜRÜN ADI :" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_urunmık" layoutX="50.0" layoutY="98.0" text="ÜRÜN ADET:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_urunad" layoutX="175.0" layoutY="54.0" />
+                  <TextField fx:id="txt_urunmıktar" layoutX="175.0" layoutY="98.0" />
+                  <Button fx:id="btn_urunekle" layoutX="50.0" layoutY="260.0" mnemonicParsing="false" onAction="#Tiklandi_urunekle" prefHeight="40.0" prefWidth="100.0" text="ÜRÜN EKLE" />
+                  <Button fx:id="btn_urunguncelle" layoutX="208.0" layoutY="260.0" mnemonicParsing="false" onAction="#Tiklandi_urunguncelle" prefHeight="40.0" prefWidth="119.0" text="ÜRÜN GÜNCELLE" />
+                  <Label layoutX="50.0" layoutY="148.0" text="FİYAT :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_fiyat" layoutX="175.0" layoutY="146.0" />
+                  <TextField fx:id="txt_urunıd" layoutX="175.0" layoutY="14.0" />
+                  <Label fx:id="lbl_urunid" layoutX="54.0" layoutY="11.0" prefHeight="32.0" prefWidth="83.0" text="Ürün ID:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_urungetir" layoutX="357.0" layoutY="260.0" mnemonicParsing="false" onAction="#Tiklandi_btn_urungetir" prefHeight="40.0" prefWidth="119.0" text="BİLGİ GETİR" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tab_stok1" text="Stok Yönetim">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table_stok" prefHeight="400.0" prefWidth="522.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="kln_urunID" prefWidth="75.0" text="Ürün ID" />
+                      <TableColumn fx:id="kln_urunad" prefWidth="75.0" text="Ürün Adı" />
+                      <TableColumn fx:id="kln_urunadet" prefWidth="75.0" text="Ürün Adet" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab fx:id="tab_siparis" text="Siparis">
+      <content>
+          <AnchorPane fx:id="anc_siparis" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+              <children>
+                  <TableView fx:id="tble_veriler" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="225.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                      <columns>
+                          <TableColumn fx:id="kln_urun" prefWidth="77.0" text="ÜRÜN İSMİ" />
+                          <TableColumn fx:id="kln_brm" prefWidth="75.0" text="STOK ADET" />
+                          <TableColumn fx:id="kln_fyt" prefWidth="72.0" text="FİYAT" />
+                      </columns>
+                  </TableView>
+                  <Slider fx:id="sldr_brm" layoutX="152.0" layoutY="236.0" min="1.0" />
+                  <Label fx:id="lbl_brm" layoutX="48.0" layoutY="229.0" prefHeight="27.0" prefWidth="79.0" text="ADET ">
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+                  </Label>
+                  <Button fx:id="btn_siparisKaydet" layoutX="373.0" layoutY="223.0" mnemonicParsing="false" onAction="#Tiklandi_siparisKaydet" text="KAYDET" textFill="#3c3bcc">
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+                  </Button>
+                  <Label fx:id="siparis_lbl_fiyat" layoutX="298.0" layoutY="61.0" text="Toplam fiyat">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+              </children>
+          </AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="tab_musteri" text="Müşteri">
+         <content>
+            <AnchorPane fx:id="anc_musteri" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txt_isim" layoutX="106.0" layoutY="43.0" />
+                  <TextField fx:id="txt_sifre" layoutX="106.0" layoutY="90.0" />
+                  <TextField fx:id="txt_telefon" layoutX="106.0" layoutY="138.0" />
+                  <TextField fx:id="txt_adrs" layoutX="106.0" layoutY="234.0" />
+                  <Label fx:id="lbl_isim" layoutX="33.0" layoutY="45.0" text="İSİM :" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="45.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_soyisim" layoutX="30.0" layoutY="92.0" text="SİFRE :" AnchorPane.leftAnchor="30.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_tlfn" layoutX="33.0" layoutY="140.0" text="TELEFON :" AnchorPane.leftAnchor="30.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_adrs" layoutX="23.0" layoutY="237.0" text="ADRES :" AnchorPane.leftAnchor="23.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_mkaydet" layoutX="357.0" layoutY="277.0" mnemonicParsing="false" onAction="#Tiklandi_müsteriEnter" prefHeight="76.0" prefWidth="144.0" text="KAYDET" />
+                  <TextField fx:id="txt_mail" layoutX="106.0" layoutY="188.0" />
+                  <Label layoutX="28.0" layoutY="191.0" text="MAİL :" AnchorPane.leftAnchor="28.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="5.0" prefHeight="26.0" prefWidth="185.0" text="MÜŞTERİ BİLGİ GÜNCELLEME" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab_sipyonetimi" text="Siparis yönetimi">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="444.0" prefWidth="583.0">
+               <children>
+                  <TableView fx:id="table_sip_yönetimi" layoutX="-2.0" layoutY="-3.0" prefHeight="284.0" prefWidth="591.0" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="kln_sip_siparisid" prefWidth="75.0" text="SiparisID" />
+                        <TableColumn fx:id="kln_sip_urunid" prefWidth="75.0" text="ÜrünAdı" />
+                        <TableColumn fx:id="kln_sip_adet" prefWidth="62.0" text="Adet" />
+                        <TableColumn fx:id="kln_sip_musteri_id" prefWidth="72.0" text="MusteriID" />
+                        <TableColumn fx:id="kln_sip_musteri" text="MusteriAdı" />
+                        <TableColumn fx:id="kln_sip_musteri_adres" prefWidth="75.0" text="Adres" />
+                        <TableColumn fx:id="kln_sip_musteri_telefon" prefWidth="77.0" text="Telefon" />
+                        <TableColumn fx:id="kln_sip_musteri_mail" prefWidth="84.0" text="Mail" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="siparis_btn_yenile" layoutX="258.0" layoutY="341.0" mnemonicParsing="false" onAction="#btn_YenileTiklandi" prefHeight="38.0" prefWidth="67.0" text="Yenile">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
